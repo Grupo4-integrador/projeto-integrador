@@ -25,6 +25,13 @@ const BootstrapButton = styled(Button)({
   },
 });
 
+const BootstrapButton2 = styled(Button)({
+  textTransform: "none",
+  fontSize: 18,
+  lineHeight: 1.5,
+  fontFamily: ["sans-serif"].join(",")
+});
+
 function Home() {
   return (
     <div className="login-screen">
@@ -80,14 +87,14 @@ function Home() {
                   marginTop: 15,
                 }}
               >
-                <BiLogIn style={{ fontSize: "24px",marginLeft: '-38px', marginRight: '20px'}} />
+                <BiLogIn style={{ fontSize: "30px",marginLeft: '-38px', marginRight: '20px'}} />
                 Fazer Login
               </BootstrapButton>
               </Link>
             </div>
             <div className="button-forget">
              <Link style={{textDecoration: 'none'}} to="/password-forgot"> 
-              <Button
+              <BootstrapButton2
                 variant="outlined"
                 style={{
                   width: 465,
@@ -98,7 +105,7 @@ function Home() {
                 }}
               >
                 Esqueci minha senha
-              </Button>
+              </BootstrapButton2>
              </Link>
             </div>
           </div>

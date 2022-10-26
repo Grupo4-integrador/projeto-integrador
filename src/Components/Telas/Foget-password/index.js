@@ -7,25 +7,23 @@ import { styled } from "@mui/material/styles";
 
 import { BiLogIn } from "react-icons/bi";
 
-
-
 import Logo from "../../../Img/logo.png";
 import "./index.css";
 
 const BootstrapButton = styled(Button)({
-    boxShadow: "none",
-    textTransform: "none",
-    fontSize: 20,
-    lineHeight: 1.5,
-    backgroundColor: "#01e78e",
+  boxShadow: "none",
+  textTransform: "none",
+  fontSize: 20,
+  lineHeight: 1.5,
+  backgroundColor: "#01e78e",
+  borderColor: "#01e78e",
+  fontFamily: ["sans-serif"].join(","),
+  "&:hover": {
+    backgroundColor: "#0069d9",
     borderColor: "#01e78e",
-    fontFamily: ["sans-serif"].join(","),
-    "&:hover": {
-      backgroundColor: "#0069d9",
-      borderColor: "#01e78e",
-      boxShadow: "none",
-    },
-  });
+    boxShadow: "none",
+  },
+});
 
 function FogetPassword() {
   return (
@@ -37,9 +35,10 @@ function FogetPassword() {
               <img src={Logo} alt="Logo" width={509} height={90} />
             </div>
             <p className="forgot-title">Recuperação de Senha</p>
-            <div class="text-forgot">
-            <p className="forgot-subtitle">Preencha o campo abaixo, para enviarmos um e-mail com a recuperação da sua senha</p>
-            </div>
+            <p className="forgot-subtitle">
+              Preencha o campo abaixo, para enviarmos um e-mail com a
+              recuperação da sua senha
+            </p>
             <div className="login-input">
               <TextField
                 id="outlined-basic"
@@ -49,28 +48,34 @@ function FogetPassword() {
                 style={{
                   width: 465,
                   height: 45,
-                  marginBottom: 15,
+                  marginBottom: 40,
                   marginLeft: 25,
-                  marginTop: 0,
+                  marginTop: 30,
                 }}
               />
             </div>
             <div className="button-forget">
-             <Link style={{textDecoration: 'none'}} to="/"> 
-             <BootstrapButton
-                variant="contained"
-                style={{
-                  width: 465,
-                  height: 45,
-                  marginBottom: 70,
-                  marginLeft: 25,
-                  marginTop: 15,
-                }}
-              >
-                <BiLogIn style={{ fontSize: "24px",marginLeft: '-38px', marginRight: '20px'}} />
-                Recuperar Senha
-              </BootstrapButton>
-                </Link>
+              <Link style={{ textDecoration: "none" }} to="/">
+                <BootstrapButton
+                  variant="contained"
+                  style={{
+                    width: 465,
+                    height: 55,
+                    marginBottom: 70,
+                    marginLeft: 25,
+                    marginTop: 15,
+                  }}
+                >
+                  <BiLogIn
+                    style={{
+                      fontSize: "30px",
+                      marginLeft: "-38px",
+                      marginRight: "20px",
+                    }}
+                  />
+                  Recuperar Senha
+                </BootstrapButton>
+              </Link>
             </div>
           </div>
         </div>
