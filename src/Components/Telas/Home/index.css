@@ -4,15 +4,35 @@
   padding: 0;
   margin: 0;
 }
-.login-screen {
-  width: 100%;
-  min-height: 100vh;
-  background: url("../../../Img/fundo-tela-login.png") no-repeat bottom center;
-  background-size: cover;
-  align-items: center;
-  
-}
 
+.cointainer{
+  width: 100vw;
+  height: 100vh;
+  background: url("../../../Img/fundo-tela-login.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box{
+  width: 541px;
+  height: 582px;
+  background-image:linear-gradient(to top, white 0, white 80%, #D9D9D9 20%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  display: flex;
+  flex-Wrap: wrap;
+  flex-Direction: column;
+  align-Content: space-between;
+  align-Items: center;
+  justify-Content: center;
+}
+.img-logo{
+  background-image: url("../../../Img/logo-dua.png");
+}
 .login-title {
   display: flex;
   font-size: 2.5rem;
@@ -24,17 +44,7 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
+  line-break: strict;
 
   color: #686868;
-}
-.input-login{
-  padding: 0.5rem;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  margin: 1.5rem;
-  color: white ;
-  
 }
