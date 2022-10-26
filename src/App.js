@@ -1,9 +1,17 @@
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+
 import Home from "./Components/Telas/Home";
-import "./App.css";
+import Inicitial from "./Components/Telas/Inicitial/index";
+
 function App() {
   return (
-    <div>
-    sdposkdo
+    <div className="App">
+      <Routes>
+        <Route index element={<Home />} />
+
+        <Route path="home" element={<Inicitial />} />
+      </Routes>
     </div>
   );
 }

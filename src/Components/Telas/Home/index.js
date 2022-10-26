@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { TextField } from "@mui/material";
 import Button from "@mui/material/Button";
@@ -68,6 +69,7 @@ function Home() {
               />
             </div>
             <div className="button-login">
+             <Link style={{textDecoration: 'none'}} to="/home"> 
               <BootstrapButton
                 variant="contained"
                 style={{
@@ -81,6 +83,7 @@ function Home() {
                 <BiLogIn style={{ fontSize: "24px",marginLeft: '-38px', marginRight: '20px'}} />
                 Fazer Login
               </BootstrapButton>
+              </Link>
             </div>
             <div className="button-forget">
               <Button
