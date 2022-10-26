@@ -86,6 +86,7 @@ function Home() {
               </Link>
             </div>
             <div className="button-forget">
+             <Link style={{textDecoration: 'none'}} to="/password-forgot"> 
               <Button
                 variant="outlined"
                 style={{
@@ -98,6 +99,7 @@ function Home() {
               >
                 Esqueci minha senha
               </Button>
+             </Link>
             </div>
           </div>
         </div>

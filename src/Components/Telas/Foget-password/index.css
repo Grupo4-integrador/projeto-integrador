@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Open+Sans:wght@300;500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.cointainer {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../../Img/fundo-tela-login.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.box-white {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  width: 541px;
+  height: 582px;
+  background-image: linear-gradient(to top, white 81%, white 1%, #eeebeb 18%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-between;
+  align-items: center;
+  justify-content: center;
+}
+.img-logo-forgot {
+  margin-bottom: 25px;
+  margin-left: 15px;
+}
+.text-forgot {
+  text-align: center;
+  padding: 0 15px 90px 0px !important
+
+  
+}
+.forgot-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  color: #686868;
+
+  margin: 40px 10px 15px 5px;
+
+  border-bottom: 1px solid rgb(85, 84, 84);
+}
+.forgot-subtitle {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+
+  color: #898686;
+
+  margin: 0px 10px 20px 20px;
+}
