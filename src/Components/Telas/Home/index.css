@@ -8,11 +8,17 @@
 .cointainer{
   width: 100vw;
   height: 100vh;
-  background: url("../../../Img/fundo-tela-login.png");
+  background-image: url("../../../Img/fundo-tela-login.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
+ 
+}
+.box-white{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,7 +26,7 @@
 .box{
   width: 541px;
   height: 582px;
-  background-image:linear-gradient(to top, white 0, white 80%, #D9D9D9 20%);
+  background-image:linear-gradient(to top, white 79%, white 1%, #D9D9D9 20%);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
   display: flex;
@@ -31,20 +37,32 @@
   justify-Content: center;
 }
 .img-logo{
-  background-image: url("../../../Img/logo-dua.png");
+  margin-bottom: 40px;
+  margin-top: 15px;
+
 }
 .login-title {
-  display: flex;
-  font-size: 2.5rem;
-  font-weight: 600;
-  margin: 1.5rem;
-  align-items: center;
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 29px;
-  line-break: strict;
-
+  font-size: 20px;
   color: #686868;
+
+  margin: 20px 0px 0px 20px;
+  
+}
+.login-input{
+  display: flex;
+  flex-direction: column;
+}
+.icon-Login{
+  width: 51px; 
+  height: 45px;
+  background: #D9D9D9;
+}
+.button-login{
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
 }
