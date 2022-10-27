@@ -1,12 +1,32 @@
 import React from "react";
 
+import { Sidebar, Menu, MenuItem, useProSidebar } from 'react-pro-sidebar';
+
+
+
 import Header from "../../Header";
 import "./index.css";
 
 function Inicitial() {
+  const { collapseSidebar } = useProSidebar();
+
   return (
     <div>
       <Header />
+
+      <div style={{ display: 'flex', height: '100%' }}>
+      <Sidebar>
+        <Menu>
+          <MenuItem> Documentation</MenuItem>
+          <MenuItem> Calendar</MenuItem>
+          <MenuItem> E-commerce</MenuItem>
+        </Menu>
+      </Sidebar>
+      <main>
+        <button onClick={() => collapseSidebar()}>Collapse</button>
+      </main>
+    </div>
+
       <div className="container">
         <div className="cima">
         <div className="box-auditorio">
