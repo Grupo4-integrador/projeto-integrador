@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Sidebar, Menu, MenuItem } from 'react-pro-sidebar';
+import { Link } from "react-router-dom";
 
 
 
@@ -15,9 +16,16 @@ function Inicitial() {
       <div style={{ display: 'flex', height: '100%' }}>
       <Sidebar>
         <Menu>
-          <MenuItem> Documentation</MenuItem>
-          <MenuItem> Calendar</MenuItem>
-          <MenuItem> E-commerce</MenuItem>
+          <MenuItem>Suas Reservas</MenuItem>
+          <MenuItem>Editar Reservas</MenuItem>
+          <MenuItem>Falar com secretaria</MenuItem>
+          <MenuItem>Reportar um problema de Reserva</MenuItem>
+          <MenuItem>Lista de Materiais</MenuItem>
+          <MenuItem>Solicitar equipamento para aula</MenuItem>
+          <MenuItem>Equipamentos utilizados na aula passada</MenuItem>
+          <Link style={{ textDecoration: "none" }} to="/">
+          <MenuItem>Sair do sistema</MenuItem>
+          </Link>
         </Menu>
       </Sidebar>
     </div>
