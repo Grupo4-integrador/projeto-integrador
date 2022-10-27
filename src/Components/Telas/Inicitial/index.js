@@ -8,8 +8,6 @@ import Header from "../../Header";
 import "./index.css";
 
 function Inicitial() {
-  const { collapseSidebar } = useProSidebar();
-
   return (
     <div>
       <Header />
@@ -22,9 +20,6 @@ function Inicitial() {
           <MenuItem> E-commerce</MenuItem>
         </Menu>
       </Sidebar>
-      <main>
-        <button onClick={() => collapseSidebar()}>Collapse</button>
-      </main>
     </div>
 
       <div className="container">
