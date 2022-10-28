@@ -4,11 +4,16 @@
 }
 body {
   background-color: #f5f5f5;
+
 }
 .container {
+  /*
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  */
   display: flex;
-  justify-content: right;
-  align-items: stretch;
+  justify-content: center;
+
 }
 .box-auditorio {
   width: 500px;
