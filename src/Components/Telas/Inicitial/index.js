@@ -31,7 +31,7 @@ function Inicitial() {
     </div>
 
       <div className="container">
-        <div className="cima">
+        <div className="esquerda">
         <div className="box-auditorio">
           <p>Auditorio</p>
         </div>
@@ -39,7 +39,7 @@ function Inicitial() {
           <p>Laboratorios</p>
         </div>
         </div>
-        <div className="baixo">
+        <div className="direita">
         <div className="box-class-room-small">
           <p>Salas de Aula pequena</p>
         </div>
