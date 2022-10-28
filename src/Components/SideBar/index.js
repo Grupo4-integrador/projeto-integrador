@@ -19,11 +19,14 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
+
+import {TfiHeadphoneAlt} from "react-icons/tfi"; 
+import {BiCalendarEvent, BiAddToQueue, BiCalendarEdit, BiLogOut} from "react-icons/bi";
+import {GrCompliance} from "react-icons/gr";
+import {MdPostAdd} from "react-icons/md";
 
 const drawerWidth = 240;
 
@@ -188,13 +191,9 @@ function SidebarHome() {
         <List>
           {[
             "Registar Sala",
-            "Suas Reservas",
-            "Suas Reservas",
             "Falar com secretaria",
-            "Lista de materiais",
-            "Solicitar equipamento",
           ].map((text, index) => (
-            <ListItem key={text} disablePadding sx={{ display: "block", marginTop:"40px" }}>
+            <ListItem key={text} disablePadding sx={{ display: "block"}}>
               <ListItemButton
                 sx={{
                   minHeight: 48,
@@ -209,15 +208,74 @@ function SidebarHome() {
                     justifyContent: "center",
                   }}
                 >
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                  {index % 2 === 0 ? <BiAddToQueue style={{color:'black', fontSize:'25px'}} /> : <TfiHeadphoneAlt  style={{color:'black', fontSize:'25px'}} /> }
                 </ListItemIcon>
                 <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 }} />
               </ListItemButton>
             </ListItem>
           ))}
         </List>
-
-        <Divider style={{marginTop:'290px'}}/>
+        <Divider />
+        
+        <List>
+          {[
+            "Editar suas Reservas",
+            "Suas Reservas",
+          ].map((text, index) => (
+            <ListItem key={text} disablePadding sx={{ display: "block"}}>
+              <ListItemButton
+                sx={{
+                  minHeight: 48,
+                  justifyContent: open ? "initial" : "center",
+                  px: 2.5,
+                }}
+              >
+                <ListItemIcon
+                  sx={{
+                    minWidth: 0,
+                    mr: open ? 3 : "auto",
+                    justifyContent: "center",
+                  }}
+                >
+                  {index % 2 === 0 ? <BiCalendarEdit style={{color:'black', fontSize:'25px'}} /> : <BiCalendarEvent  style={{color:'black', fontSize:'25px'}} />  }
+                </ListItemIcon>
+                <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 }} />
+              </ListItemButton>
+            </ListItem>
+          ))}
+        </List>
+        <Divider />
+  
+        <List>
+          {[
+            "Lista de materiais",
+            "Solicitar equipamento",
+          ].map((text, index) => (
+            <ListItem key={text} disablePadding sx={{ display: "block"}}>
+              <ListItemButton
+                sx={{
+                  minHeight: 48,
+                  justifyContent: open ? "initial" : "center",
+                  px: 2.5,
+                }}
+              >
+                <ListItemIcon
+                  sx={{
+                    minWidth: 0,
+                    mr: open ? 3 : "auto",
+                    justifyContent: "center",
+                  }}
+                >
+                  {index % 2 === 0 ? <GrCompliance style={{color:'black', fontSize:'25px'}} /> : <MdPostAdd  style={{color:'black', fontSize:'25px'}} />  }
+                </ListItemIcon>
+                <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 }} />
+              </ListItemButton>
+            </ListItem>
+          ))}
+        </List>
+        <Divider />
+        
+        <Divider/>
         <List>
           {["Sair do sistema"].map((text, index) => (
             <ListItem key={text} disablePadding sx={{ display: "block"}}>
@@ -236,7 +294,7 @@ function SidebarHome() {
                     justifyContent: "center",
                   }}
                 >
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                <BiLogOut  style={{color:'black', fontSize:'25px'}}/> 
                 </ListItemIcon>
                 <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 }} />
               </ListItemButton>
