@@ -2,116 +2,22 @@
   margin: 0;
   padding: 0;
 }
-body {
-  background-color: #f5f5f5;
 
-}
 .container {
-  /*
   display: grid;
   grid-template-columns: 1fr 1fr;
-  */
-  display: flex;
-  justify-content: center;
-
-}
-.box-auditorio {
-  width: 500px;
-  height: 300px;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin-top: 47px;
-  display: flex;
-  border-radius: 5px;
-
-  align-content: space-between;
-  align-items: center;
-  justify-content: center;
+  padding-left: 20rem;
 
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
-  color: #686868;
-
-  cursor: pointer;
+  font-size: 50px;
+  color: black;
 }
 
-.box-lab {
-  width: 500px;
-  height: 300px;
-  background-color: white;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin-top: 47px;
-  margin-right: 35px;
-  display: flex;
-  border-radius: 5px;
-
-  align-content: space-between;
-  align-items: center;
-  justify-content: center;
-
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  color: #686868;
-
-  cursor: pointer;
-}
-
-.box-class-room-small {
-  width: 500px;
-  height: 300px;
-  background-color: white;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin-top: 47px;
-  margin-right: 35px;
-  display: flex;
-  border-radius: 5px;
-
-  align-content: space-between;
-  align-items: center;
-  justify-content: center;
-
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  color: #686868;
-
-  cursor: pointer;
-}
-
-.box-class-room {
-  width: 500px;
-  height: 300px;
-  background-color: white;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin-top: 47px;
-  display: flex;
-  border-radius: 5px;
-
-  align-content: space-between;
-  align-items: center;
-  justify-content: center;
-
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  color: #686868;
-
-  cursor: pointer;
-
-}
-
-.bar-nav{
-  width: 90px;
-  height: 900px;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-style: solid 0px 1px 0px 0px #000 ; 
-
-  display: flex;
+.box-reuniao{
+  display: "flex";
+  align-Items: "center";
+  justify-Content: "center";
+  text-align: center;
 }
