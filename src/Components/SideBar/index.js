@@ -139,7 +139,7 @@ function SidebarHome() {
             component="div"
             style={{ color: "black" }}
           >
-            Sistemas de Reservas de Salas
+            Sistema de Reservas de Salas 
           </Typography>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} />
           <IconButton
