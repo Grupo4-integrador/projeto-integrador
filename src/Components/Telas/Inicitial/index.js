@@ -11,10 +11,10 @@ function Inicitial() {
       <div>
       <SidebarHome />
         <div className="container">
-          <Box  style={{ backgroundColor: "white", opacity: "0.5" }}
+          <Box  style={{ backgroundColor: "white", opacity: "0.8" }}
             sx={{
-              width: 600,
-              height: 400,
+              width: 500,
+              height: 300,
               backgroundImage:'url(/Img/Auditorio.jpg)',
               backgroundSize: 'cover',
               backgroundPosition: 'fixed',
@@ -25,15 +25,16 @@ function Inicitial() {
               justifyContent: "center",
               borderRadius: "5px",
               cursor: "pointer",
+              marginTop: "-15px",
             }}
           >
             <p>Auditório</p>
           </Box>
 
-          <Box  style={{ backgroundColor: "white", opacity: "0.5" }}
+          <Box  style={{ backgroundColor: "white", opacity: "0.8" }}
             sx={{
-              width: 600,
-              height: 400,
+              width: 500,
+              height: 300,
               backgroundImage:'url(/Img/sala-aula.jpeg)',
               backgroundSize: 'cover',
               backgroundPosition: 'fixed',
@@ -43,16 +44,17 @@ function Inicitial() {
               alignItems: "center",
               justifyContent: "center",
               borderRadius: "5px",
+              marginTop: "-15px",
               cursor: "pointer",
             }}
           >
             <p>Salas de Aula</p>
           </Box>
 
-          <Box  style={{ backgroundColor: "white", opacity: "0.5" }}
+          <Box  style={{ backgroundColor: "white", opacity: "0.8" }}
             sx={{
-              width: 600,
-              height: 400,
+              width: 500,
+              height: 300,
               backgroundImage:'url(/Img/laboratorio.jpg)',
               backgroundSize: 'cover',
               backgroundPosition: 'fixed',
@@ -69,10 +71,10 @@ function Inicitial() {
             <p>Laboratórios</p>
           </Box>
 
-          <Box  style={{ backgroundColor: "white", opacity: "0.5" }}
+          <Box  style={{ backgroundColor: "white", opacity: "0.8" }}
             sx={{
-              width: 600,
-              height: 400,
+              width: 500,
+              height: 300,
               backgroundImage:'url(/Img/reuniao.jpg) ',
               backgroundSize: 'cover',
               backgroundPosition: 'fixed',
@@ -82,7 +84,7 @@ function Inicitial() {
               alignItems: "center",
               justifyContent: "center",
               borderRadius: "5px",
-              marginTop: "20px",
+              marginTop: "20px",  
               cursor: "pointer",
             }}
             >
