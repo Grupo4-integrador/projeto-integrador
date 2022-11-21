@@ -1,6 +1,8 @@
 import React from "react";
 
 import Box from "@mui/material/Box";
+import { Link } from "react-router-dom";
+
 
 import "./index.css";
 import SidebarHome from "../../SideBar";
@@ -11,6 +13,7 @@ function Inicitial() {
       <div>
       <SidebarHome />
         <div className="container">
+        <Link style={{textDecoration: 'none', color:'black' }} to="/auditorio"> 
           <Box  style={{ backgroundColor: "white", opacity: "0.6" }}
             sx={{
               width: 500,
@@ -30,7 +33,9 @@ function Inicitial() {
           >
             <p>Auditório</p>
           </Box>
+          </Link>
 
+          <Link style={{textDecoration: 'none', color:'black' }} to="/saladeaula"> 
           <Box  style={{ backgroundColor: "white", opacity: "0.6" }}
             sx={{
               width: 500,
@@ -50,7 +55,9 @@ function Inicitial() {
           >
             <p>Salas de Aula</p>
           </Box>
+          </Link>
 
+          <Link style={{textDecoration: 'none', color:'black' }} to="/laboratorio"> 
           <Box  style={{ backgroundColor: "white", opacity: "0.6" }}
             sx={{
               width: 500,
@@ -70,7 +77,9 @@ function Inicitial() {
             >
             <p>Laboratórios</p>
           </Box>
+          </Link>
 
+          <Link style={{textDecoration: 'none', color:'black' }} to="/reuniao"> 
           <Box  style={{ backgroundColor: "white", opacity: "0.6" }}
             sx={{
               width: 500,
@@ -90,6 +99,7 @@ function Inicitial() {
             >
               <p>Salas de Reunião</p>
           </Box>
+          </Link>
         </div>
       </div>
   );
