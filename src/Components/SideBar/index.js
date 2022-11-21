@@ -1,6 +1,7 @@
-import * as React from "react";
+import React, { useState } from 'react';
 
 import { Link } from "react-router-dom";
+
 
 import { styled, useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
@@ -27,6 +28,8 @@ import {TfiHeadphoneAlt} from "react-icons/tfi";
 import {BiCalendarEvent, BiAddToQueue, BiCalendarEdit, BiLogOut} from "react-icons/bi";
 import {GrCompliance} from "react-icons/gr";
 import {MdPostAdd} from "react-icons/md";
+
+import MaterialList from "../Modal/ListaDeMaterias";
 
 const drawerWidth = 240;
 
@@ -114,6 +117,12 @@ function SidebarHome() {
   const handleClose = () => {
     setAnchorEl(null);
   };
+  
+  // const [setShow] = useState(false);
+
+
+  // const materialListOPenModal = () => setShow(true);
+
 
   return (
     <Box sx={{ display: "flex" }}>
@@ -229,7 +238,8 @@ function SidebarHome() {
                   justifyContent: open ? "initial" : "center",
                   px: 2.5,
                 }}
-              >
+                onClick={MaterialList()}>
+              
                 <ListItemIcon
                   sx={{
                     minWidth: 0,
