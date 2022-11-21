@@ -11,7 +11,7 @@ function Inicitial() {
       <div>
       <SidebarHome />
         <div className="container">
-          <Box  style={{ backgroundColor: "white", opacity: "0.8" }}
+          <Box  style={{ backgroundColor: "white", opacity: "0.6" }}
             sx={{
               width: 500,
               height: 300,
@@ -31,7 +31,7 @@ function Inicitial() {
             <p>Auditório</p>
           </Box>
 
-          <Box  style={{ backgroundColor: "white", opacity: "0.8" }}
+          <Box  style={{ backgroundColor: "white", opacity: "0.6" }}
             sx={{
               width: 500,
               height: 300,
@@ -51,7 +51,7 @@ function Inicitial() {
             <p>Salas de Aula</p>
           </Box>
 
-          <Box  style={{ backgroundColor: "white", opacity: "0.8" }}
+          <Box  style={{ backgroundColor: "white", opacity: "0.6" }}
             sx={{
               width: 500,
               height: 300,
@@ -71,7 +71,7 @@ function Inicitial() {
             <p>Laboratórios</p>
           </Box>
 
-          <Box  style={{ backgroundColor: "white", opacity: "0.8" }}
+          <Box  style={{ backgroundColor: "white", opacity: "0.6" }}
             sx={{
               width: 500,
               height: 300,

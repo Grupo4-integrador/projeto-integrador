@@ -275,7 +275,7 @@ function SidebarHome() {
         </List>
         <Divider />
         
-        <Divider/>
+        <Divider style={{marginTop:"270px"}}/>
         <List>
           {["Sair do sistema"].map((text, index) => (
             <ListItem key={text} disablePadding sx={{ display: "block"}}>
