@@ -12,7 +12,7 @@ function Inicitial() {
   return (
       <div>
       <SidebarHome />
-        <div className="container">
+        <div className="container2">
         <Link style={{textDecoration: 'none', color:'black' }} to="/auditorio"> 
           <Box  style={{ backgroundColor: "white", opacity: "0.6" }}
             sx={{

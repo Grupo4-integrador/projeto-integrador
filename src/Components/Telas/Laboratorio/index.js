@@ -8,6 +8,7 @@ import { ptBR } from "date-fns/locale";
 import { Calendar, dateFnsLocalizer } from "react-big-calendar";
 
 import SidebarHome from "../../SideBar/index";
+import './index.scss';
 
 import "react-big-calendar/lib/css/react-big-calendar.css";
 
@@ -57,27 +58,41 @@ const events = [
 ];
 
 const Lab = (props) => (
-  <div className="myCustomHeight">
+  <>
     <SidebarHome />
-    <Calendar
-      eventPropGetter={(event) => {
-        return {
-          style: {
-            backgroundColor: "#3f51b5",
-            borderRadius: "8px",
-            minHeight: "10px",
-          },
-        };
-      }}
-      localizer={localizer}
-      events={events}
-      startAccessor="start"
-      endAccessor="end"
-      style={{ height: 500, margin: "50px", width: "60%", float: "right", boxShadow: "0 0 10px 0 rgba(0,0,0,0.2)" }}
-      messages={messages}
-      culture={"pt-BR"}
-    />
-  </div>
+    <div className="myCustomHeight">
+      <div className="container">
+        <div className="card">
+          <div className="card-body">
+            <h1>Filtro Laboratorios</h1>
+            <input type="text" placeholder="Pesquisar" />
+            <input type="text" placeholder="Pesquisar" />
+            <input type="text" placeholder="Pesquisar" />
+            <p>Qualquer coisa foda se</p>
+            <input type="text" placeholder="Pesquisar" />
+            <input type="text" placeholder="Pesquisar" />
+          </div>
+        </div>
+      </div>
+      <Calendar
+        localizer={localizer}
+        events={events}
+        startAccessor="start"
+        endAccessor="end"
+        style={{
+          height: 800,
+          width: "60%",
+          boxShadow: "0 0 10px 0 rgba(0,0,0,0.2)",
+          borderRadius: "10px",
+          padding: "20px",
+          float: "right",
+          marginRight: "20px",
+        }}
+        messages={messages}
+        culture={"pt-BR"}
+      />
+    </div>
+  </>
 );
 
 export default Lab;

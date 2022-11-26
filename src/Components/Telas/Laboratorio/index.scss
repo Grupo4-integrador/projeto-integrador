@@ -1,0 +1,112 @@
+@import "react-big-calendar/lib/sass/styles";
+@import "react-big-calendar/lib/sass/variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.rbc-header {
+  overflow: hidden;
+  flex: 1 0 0%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0 10px;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  font-size: 90%;
+  min-height: 0;
+  border-bottom: 1px solid $cell-border;
+
+  & + & {
+    border-left: 1px solid $cell-border;
+  }
+}
+$btn-color: #3f51b5 !default;
+
+/* MEXER DAQUI PRA BAIXO PARA MUDAR O CARD DO FILTRO*/
+.myCustomHeight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.container {
+  flex: 1 1 100px;
+  display: flex;
+
+  padding-left: 20rem;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px; 
+  color: black;
+}
+.card{
+  background-color: white;
+  width: 90%;
+  height: 800px;
+  background: white;
+  border-radius: 10px;
+  box-shadow:10px 10px 10px 10px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  
+}
+.card h1 {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid silver;
+}
+form .card-body {
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 30px 0;
+}
+.card-body input {
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.card-body label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.card-body span::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #2691d9;
+  transition: 0.5s;
+}
+
+.card-body input:focus ~ label,
+.card-body input:valid ~ label {
+  top: -5px;
+  color: #2691d9;
+}
+.card-body input:focus ~ span::before,
+.card-body input:valid ~ span::before {
+  width: 100%;
+}
