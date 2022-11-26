@@ -1,54 +1,107 @@
 import React from "react";
 
-import { Sidebar, Menu, MenuItem } from 'react-pro-sidebar';
+import Box from "@mui/material/Box";
 import { Link } from "react-router-dom";
 
 
-
-import Header from "../../Header";
 import "./index.css";
+import SidebarHome from "../../SideBar";
+
 
 function Inicitial() {
   return (
-    <div>
-      <Header />
-
-      <div style={{ display: 'flex', height: '100%' }}>
-      <Sidebar>
-        <Menu>
-          <MenuItem>Suas Reservas</MenuItem>
-          <MenuItem>Editar Reservas</MenuItem>
-          <MenuItem>Falar com secretaria</MenuItem>
-          <MenuItem>Reportar um problema de Reserva</MenuItem>
-          <MenuItem>Lista de Materiais</MenuItem>
-          <MenuItem>Solicitar equipamento para aula</MenuItem>
-          <MenuItem>Equipamentos utilizados na aula passada</MenuItem>
-          <Link style={{ textDecoration: "none" }} to="/">
-          <MenuItem>Sair do sistema</MenuItem>
+      <div>
+      <SidebarHome />
+        <div className="container2">
+        <Link style={{textDecoration: 'none', color:'black' }} to="/auditorio"> 
+          <Box  style={{ backgroundColor: "white", opacity: "0.6" }}
+            sx={{
+              width: 500,
+              height: 300,
+              backgroundImage:'url(/Img/Auditorio.jpg)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'fixed',
+              backgroundRepeat: 'no-repeat',
+              boxShadow: "4px 4px 4px 4px rgba(0, 0, 0, 0.25)",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              borderRadius: "5px",
+              cursor: "pointer",
+              marginTop: "-15px",
+            }}
+          >
+            <p>Auditório</p>
+          </Box>
           </Link>
-        </Menu>
-      </Sidebar>
-    </div>
 
-      <div className="container">
-        <div className="cima">
-        <div className="box-auditorio">
-          <p>Auditorio</p>
-        </div>
-        <div className="box-lab">
-          <p>Laboratorios</p>
-        </div>
-        </div>
-        <div className="baixo">
-        <div className="box-class-room-small">
-          <p>Salas de Aula pequena</p>
-        </div>
-        <div className="box-class-room">
-          <p>Salas de Aula</p>
-        </div>
+          <Link style={{textDecoration: 'none', color:'black' }} to="/saladeaula"> 
+          <Box  style={{ backgroundColor: "white", opacity: "0.6" }}
+            sx={{
+              width: 500,
+              height: 300,
+              backgroundImage:'url(/Img/sala-aula.jpeg)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'fixed',
+              backgroundRepeat: 'no-repeat',
+              boxShadow: "4px 4px 4px 4px rgba(0, 0, 0, 0.25)",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              borderRadius: "5px",
+              marginTop: "-15px",
+              cursor: "pointer",
+            }}
+          >
+            <p>Salas de Aula</p>
+          </Box>
+          </Link>
+
+          <Link style={{textDecoration: 'none', color:'black' }} to="/laboratorio"> 
+          <Box  style={{ backgroundColor: "white", opacity: "0.6" }}
+            sx={{
+              width: 500,
+              height: 300,
+              backgroundImage:'url(/Img/laboratorio.jpg)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'fixed',
+              backgroundRepeat: 'no-repeat',
+              boxShadow: "4px 4px 4px 4px rgba(0, 0, 0, 0.25)",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              borderRadius: "5px",
+              marginTop: "20px",
+              cursor: "pointer",
+            }}
+            >
+            <p>Laboratórios</p>
+          </Box>
+          </Link>
+
+          <Link style={{textDecoration: 'none', color:'black' }} to="/reuniao"> 
+          <Box  style={{ backgroundColor: "white", opacity: "0.6" }}
+            sx={{
+              width: 500,
+              height: 300,
+              backgroundImage:'url(/Img/reuniao.jpg) ',
+              backgroundSize: 'cover',
+              backgroundPosition: 'fixed',
+              backgroundRepeat: 'no-repeat',
+              boxShadow: "4px 4px 4px 4px rgba(0, 0, 0, 0.25)",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              borderRadius: "5px",
+              marginTop: "20px",  
+              cursor: "pointer",
+            }}
+            >
+              <p>Salas de Reunião</p>
+          </Box>
+          </Link>
         </div>
       </div>
-    </div>
   );
 }
 export default Inicitial;
