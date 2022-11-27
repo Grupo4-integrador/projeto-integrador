@@ -71,7 +71,6 @@ const Lab = (props) => (
         <div className="card">
           <div className="card-body">
             <h1>Filtro das Salas</h1>
-
             <i class="StairsIcon">
             <StairsIcon/>
             </i>
@@ -80,11 +79,11 @@ const Lab = (props) => (
             <input type="text" placeholder="Capacidade da sala" />
             <CalendarMonthIcon/>
             <input type="text" placeholder="Disponível este mês" />
+            <p>Calendário aqui</p>
             <MicIcon/>
             <input type="text" placeholder="Pesquisar" />
             <InsertInvitationIcon/>
             <input type="text" placeholder="Sala n°.." />
-            <p>Informações do ambiente</p>
           </div>
         </div>
       </div>
