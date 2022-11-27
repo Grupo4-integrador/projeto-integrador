@@ -12,6 +12,12 @@ import './index.scss';
 
 import "react-big-calendar/lib/css/react-big-calendar.css";
 
+import StairsIcon from '@mui/icons-material/Stairs';
+import GroupsIcon from '@mui/icons-material/Groups';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import EventIcon from '@mui/icons-material/Event';
+import MicIcon from '@mui/icons-material/Mic';
+
 const messages = {
   allDay: "Dia Inteiro",
   previous: "<",
@@ -42,18 +48,18 @@ const events = [
   {
     title: "Big Meeting",
     allDay: true,
-    start: new Date(2021, 6, 0),
-    end: new Date(2021, 6, 0),
+    start: new Date(2022, 6, 0),
+    end: new Date(2022, 6, 0),
   },
   {
     title: "Vacation",
-    start: new Date(2021, 6, 7),
-    end: new Date(2021, 6, 10),
+    start: new Date(2022, 6, 7),
+    end: new Date(2022, 6, 10),
   },
   {
     title: "Conference",
-    start: new Date(2021, 6, 20),
-    end: new Date(2021, 6, 23),
+    start: new Date(2022, 10, 20),
+    end: new Date(2022, 10, 27),
   },
 ];
 
@@ -65,12 +71,26 @@ const Lab = (props) => (
         <div className="card">
           <div className="card-body">
             <h1>Filtro Laboratorios</h1>
-            <input type="text" placeholder="Pesquisar" />
-            <input type="text" placeholder="Pesquisar" />
-            <input type="text" placeholder="Pesquisar" />
-            <p>Qualquer coisa foda se</p>
-            <input type="text" placeholder="Pesquisar" />
-            <input type="text" placeholder="Pesquisar" />
+            <span className="filter_input">
+              <EventIcon/>
+              <input type="text" placeholder="Sala n°...." />
+            </span>
+            <span className="filter_input">
+              <GroupsIcon/>
+              <input type="text" placeholder="Capacidade da sala" />
+            </span>
+            <span className="filter_input">
+              <StairsIcon/>
+              <input type="text" placeholder="No andar..." />
+            </span>
+            <span className="filter_input">
+              <CalendarMonthIcon/>
+              <input type="text" placeholder="Disponivel este mês..." />
+            </span>
+            <span className="filter_input">
+              <MicIcon/>
+              <input type="text" placeholder="Com microfone..." />
+            </span>
           </div>
         </div>
       </div>
@@ -80,7 +100,7 @@ const Lab = (props) => (
         startAccessor="start"
         endAccessor="end"
         style={{
-          height: 800,
+          height: 680,
           width: "60%",
           boxShadow: "0 0 10px 0 rgba(0,0,0,0.2)",
           borderRadius: "10px",
