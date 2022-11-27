@@ -30,15 +30,15 @@ $btn-color: #3f51b5 !default;
 /* MEXER DAQUI PRA BAIXO PARA MUDAR O CARD DO FILTRO*/
 .myCustomHeight {
   display: flex;
-  align-items: center;
   justify-content: center;
+  margin-top: 85px;
   flex-wrap: wrap;
 }
 .container {
-  flex: 1 1 100px;
+  // flex: 1 1 100px;
   display: flex;
 
-  padding-left: 20rem;
+  // padding-left: 20rem;
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;

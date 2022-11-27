@@ -17,6 +17,7 @@ import GroupsIcon from '@mui/icons-material/Groups';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import EventIcon from '@mui/icons-material/Event';
 import MicIcon from '@mui/icons-material/Mic';
+import { Autocomplete } from "@mui/material";
 
 const messages = {
   allDay: "Dia Inteiro",
@@ -65,8 +66,8 @@ const events = [
 
 const Lab = (props) => (
   <>
-    <SidebarHome />
     <div className="myCustomHeight">
+    <SidebarHome />
       <div className="container">
         <div className="card">
           <div className="card-body">
