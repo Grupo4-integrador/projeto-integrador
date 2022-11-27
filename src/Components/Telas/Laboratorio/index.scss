@@ -56,6 +56,8 @@ $btn-color: #3f51b5 !default;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 8px;
+  padding-top: 0;
 }
 .card h1 {
   text-align: center;
@@ -82,7 +84,7 @@ form .card-body {
   font-size: 16px;
   background: none;
   outline: none;
-  margin: 20px 0;
+  margin: 40px auto;
 
   border-radius: 20px;
 
