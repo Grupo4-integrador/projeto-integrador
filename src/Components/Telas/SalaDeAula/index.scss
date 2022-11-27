@@ -8,13 +8,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-.iconCapacidade{
-  top: 0;
-  right: 0;
-  position: absolute;
-}
-
-
 .rbc-header {
   overflow: hidden;
   flex: 1 0 0%;
@@ -58,33 +51,45 @@ $btn-color: #3f51b5 !default;
   height: 800px;
   background: white;
   border-radius: 10px;
-  box-shadow:10px 10px 10px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  
 }
 .card h1 {
+  width: 90%;
+  margin: auto;
   text-align: center;
-  padding: 20px;
-  border-bottom: 1px solid silver;
+  padding: 30px 5px 5px 5px;
+  border-bottom: 1px solid black;
+
 }
+
 form .card-body {
   position: relative;
   border-bottom: 2px solid #adadad;
   margin: 30px 0;
+  justify-content: space-evenly;
+
 }
+
 .card-body input {
-  width: 100%;
+  width: 90%;
   padding: 0 5px;
   height: 40px;
   font-size: 16px;
-  border: none;
   background: none;
   outline: none;
   padding-left: 30px;
-  padding-right: 30px;  
+  padding-right: 30px;
+  margin: 0px 10px;
+  border: 0.5px solid #000000;
+  border-radius: 20px;
+  vertical-align: bottom;
+}
+
+.StairsIcon {
+  vertical-align: bottom;
 }
 
 .card-body label {
@@ -118,4 +123,3 @@ form .card-body {
 .card-body input:valid ~ span::before {
   width: 100%;
 }
-
