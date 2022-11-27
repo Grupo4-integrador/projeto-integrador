@@ -17,7 +17,6 @@ import GroupsIcon from '@mui/icons-material/Groups';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import EventIcon from '@mui/icons-material/Event';
 import MicIcon from '@mui/icons-material/Mic';
-import { Autocomplete } from "@mui/material";
 
 const messages = {
   allDay: "Dia Inteiro",
@@ -72,6 +71,7 @@ const Lab = (props) => (
         <div className="card">
           <div className="card-body">
             <h1>Filtro Laboratorios</h1>
+            <div className="filters">
             <span className="filter_input">
               <EventIcon/>
               <input type="text" placeholder="Sala n°...." />
@@ -92,6 +92,7 @@ const Lab = (props) => (
               <MicIcon/>
               <input type="text" placeholder="Com microfone..." />
             </span>
+            </div>
           </div>
         </div>
       </div>
