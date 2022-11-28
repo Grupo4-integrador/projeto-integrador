@@ -12,6 +12,7 @@ function Inicitial() {
   return (
       <div>
       <SidebarHome />
+<<<<<<< HEAD
         <div className="container2">
         <Link style={{textDecoration: 'none', color:'black' }} to="/auditorio"> 
           <Box  style={{ backgroundColor: "white", opacity: "0.6" }}
@@ -100,6 +101,24 @@ function Inicitial() {
               <p>Salas de Reunião</p>
           </Box>
           </Link>
+=======
+      <div className="container">
+        <div className="cima">
+        <div className="box-auditorio">
+          <p className="room-title">Auditorio</p>
+        </div>
+        <div className="box-lab">
+          <p className="room-title">Laboratorios</p>
+        </div>
+        </div>
+        <div className="baixo">
+        <div className="box-class-room-small">
+          <p className="room-title">Salas pequenas</p>
+        </div>
+        <div className="box-class-room">
+          <p className="room-title">Salas de Aula</p>
+        </div>
+>>>>>>> 3ec886ae4306d89aba1ef372dd1b96e09b2acc6f
         </div>
       </div>
   );
