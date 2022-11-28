@@ -27,8 +27,8 @@ function Inicitial() {
               alignItems: "center",
               justifyContent: "center",
               borderRadius: "5px",
+              margin: "0px 20px 20px 20px",
               cursor: "pointer",
-              marginTop: "-15px",
             }}
           >
             <p>Auditório</p>
@@ -49,7 +49,7 @@ function Inicitial() {
               alignItems: "center",
               justifyContent: "center",
               borderRadius: "5px",
-              marginTop: "-15px",
+              margin: "0px 20px 20px 20px",
               cursor: "pointer",
             }}
           >
@@ -71,7 +71,7 @@ function Inicitial() {
               alignItems: "center",
               justifyContent: "center",
               borderRadius: "5px",
-              marginTop: "20px",
+              margin: "0px 20px 20px 20px",
               cursor: "pointer",
             }}
             >
@@ -93,7 +93,7 @@ function Inicitial() {
               alignItems: "center",
               justifyContent: "center",
               borderRadius: "5px",
-              marginTop: "20px",  
+              margin: "0px 20px 20px 20px",
               cursor: "pointer",
             }}
             >

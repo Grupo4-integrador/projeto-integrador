@@ -4,17 +4,14 @@
 }
 
 .container2 {
-  display: grid;
-  grid-template-columns: 35rem 1rem;
-  padding-left: 20rem;
-
+  padding-left: 9rem;
+  display: flex;
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 50px;
   color: black;
   flex-wrap: wrap;
-  flex: 1 1 100px;
 }
 
 .box-reuniao{

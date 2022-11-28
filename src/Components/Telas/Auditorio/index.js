@@ -71,7 +71,7 @@ const Auditorio = (props) => (
       <div className="container">
         <div className="card">
           <div className="card-body">
-            <h1>Filtro Sala de Reuniao</h1>
+            <h1>Filtros para o Auditório</h1>
             <div className="all_filters">
               <span className="filter_input">
                 <EventIcon/>
