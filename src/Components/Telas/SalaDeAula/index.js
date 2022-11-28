@@ -47,18 +47,18 @@ const localizer = dateFnsLocalizer({
 
 const events = [
   {
-    title: "Big Meeting",
+    title: "Prof A.",
     allDay: true,
-    start: new Date(2022, 6, 0),
-    end: new Date(2022, 6, 0),
+    start: new Date(2022, 10, 0),
+    end: new Date(2022, 10, 0),
   },
   {
-    title: "Vacation",
-    start: new Date(2022, 6, 7),
-    end: new Date(2022, 6, 10),
+    title: "Prof. B",
+    start: new Date(2022, 10, 7),
+    end: new Date(2022, 10, 10),
   },
   {
-    title: "Conference",
+    title: "Prof. C",
     start: new Date(2022, 10, 20),
     end: new Date(2022, 10, 27),
   },
@@ -71,7 +71,7 @@ const ClassRoom = (props) => (
       <div className="container">
         <div className="card">
           <div className="card-body">
-            <h1>Filtro Sala de Reuniao</h1>
+            <h1>Filtro Salas de Aula</h1>
             <div className="all_filters">
               <span className="filter_input">
                 <EventIcon/>

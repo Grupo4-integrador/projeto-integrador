@@ -46,6 +46,7 @@ $btn-color: #3f51b5 !default;
   font-weight: 700;
   font-size: 10px;
   color: black;
+  
 }
 
 .card {
@@ -58,6 +59,10 @@ $btn-color: #3f51b5 !default;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.card-body{
+  margin: 5px;
 }
 
 .card h1 {
@@ -110,6 +115,7 @@ form .card-body {
   font-size: 16px;
   pointer-events: none;
   transition: 0.5s;
+  
 }
 
 .card-body span::before {
